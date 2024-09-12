@@ -8,15 +8,17 @@
 
 <body>
 
- <div id="buttons" class="container">
-        <button class="btn" onclick="playSound('applause')">applause</button>
-        <button class="btn" onclick="playSound('boo')">boo</button>
-        <button class="btn" onclick="playSound('gasp')">gasp</button>
-        <button class="btn" onclick="playSound('tada')">tada</button>
-        <button class="btn" onclick="playSound('victory')">victory</button>
-        <button class="btn" onclick="playSound('wrong')">wrong</button>
-        <button class="stop" onclick="stopSound()">stop</button>
+<div id="buttons">
+        <button class="btn" data-sound="sounds/applause.mp3">applause</button>
+        <button class="btn" data-sound="sounds/boo.mp3">boo</button>
+        <button class="btn" data-sound="sounds/gasp.mp3">gasp</button>
+        <button class="btn" data-sound="sounds/tada.mp3">tada</button>
+        <button class="btn" data-sound="sounds/victory.mp3">victory</button>
+        <button class="btn" data-sound="sounds/wrong.mp3">wrong</button>
+        <button class="stop">Stop</button>
     </div>
+	
+	 <audio id="audioPlayer"></audio>
 	
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="script.js">
